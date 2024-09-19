@@ -29,8 +29,7 @@ document.getElementById('Login-btn').addEventListener('click', function(event){
 
     if(inputNumber === '8' && inputPinNumer === '1234'){
         console.log('your are loggin to home page');
-        window.location.href = '/Home.html'
-
+        window.location.href = ('/Home.html');
     }
     else{
         alert('Invalid Input');

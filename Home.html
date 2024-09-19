@@ -22,25 +22,25 @@
                 </p>
         </div>
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <div>
-            
+        <div> 
             <div class="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center">
-                <span class="font-bold text-2xl">4000</span>
+                <span id="Current-Balance" class="font-bold text-2xl">4000</span>
                 <p>Current Balance</p>
             </div>
             <div class="divider"></div>
             <div class="flex justify-center space-x-10">
-            <button class="btn btn-lg">Add Money</button>
-            <button class="btn btn-lg">Cash Out</button>
+            <button id="add-money" class="btn btn-lg">Add Money</button>
+            <button id="cash-out" class="btn btn-lg">Cash Out</button>
             </div>
             </div>
             <div class="divider"></div>
-            <form class="card-body">
+            <!-- add money form start -->
+            <form id="addMoney-form" class="card-body">
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text">Phone</span>
+                  <span class="label-text">Add Amount</span>
                 </label>
-                <input id="input-phone-field" type="text" placeholder="Phone Number" class="input input-bordered" required />
+                <input id="input-amount-field" type="text" placeholder="Amount Number" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
@@ -52,16 +52,39 @@
                 </label>
               </div>
               <div class="form-control mt-6">
-                <button id="Login-btn" class="btn btn-primary">Login</button>
+                <button id="addMoney-btn" class="btn btn-primary">Add Money</button>
               </div>
             </form>
+            <!-- add money form end -->
+            
+            <!-- -------cash out form start ----- -->
+            <form id="cashOut-form" class=" hidden card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash Out</span>
+                  </label>
+                  <input id="input-cash-out" type="text" placeholder="Amount Number" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input id="input-cashOut-pin" type="Your Pin" placeholder="Your Pin" class="input input-bordered" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                </div>
+              </form>
+            <!-- -------cash out form end ----- -->
           </div>
         </div>
     </div>
 
-
-
     <!-- script.js -->
-     <script src="./payooJS/paysoo.js"></script>
+     <script src="./payooJS/home.js"></script>
+     
 </body>
 </html>
