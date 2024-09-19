@@ -1,0 +1,20 @@
+document.getElementById('Login-btn').addEventListener('click', function(event){
+    event.preventDefault();
+
+    const inputPhone = document.getElementById('input-phone-field').value;
+    const inputPin = document.getElementById('input-pin-field').value;
+
+    // if(typeof inputPhone !== "number" && typeof inputPin !== "number"){
+    //     alert('Invalid Input');
+    //  }
+    // const phoneNumber = parseFloat(inputPhone);
+    // const pinNumber = parseFloat(inputPin);
+
+    if(inputPhone === '8' && inputPin === '1234'){
+        console.log('your in home page');
+        window.location.href = '/Home.html'
+    }
+    else{
+        alert("Invalid Input")
+    }
+})
